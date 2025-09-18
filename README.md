@@ -1,2 +1,2 @@
 # gafw
-Gui Application framwork for Rust
+Gui Application framework for Rust
