@@ -8,6 +8,6 @@ keywords = ["windowing", "opengl", "egl"]
 license = "Apache-2.0 or MIT"
 readme = "README.md"
 repository = "https://github.com/j-cousino/gafw"
-documentation = ""
+documentation = "https://docs.rs/gafw"
 
 [dependencies]
