@@ -1,6 +1,20 @@
 #![warn(missing_docs)]
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+//! Cross-Platform GUI Application Framework for rust
+//!
+use git_version::git_version;
+
+const GIT_VERSION: &str = git_version!();
+
+/// Returns the gafw crate version
+/// 
+/// # Examples
+/// 
+/// ```
+/// // Prints the crate version
+/// println!( "Version {}", gafw::version() );
+/// ```
+pub fn version() -> String {
+    std::format!("{} {}", std::env!("CARGO_PKG_VERSION"), GIT_VERSION )
 }
 
 #[cfg(test)]
@@ -8,8 +22,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    fn check_version_funcion() {
+        let result = version();
+        let expecting = std::format!("0.1.0 {}", GIT_VERSION);
+        assert_eq!(result, expecting);
     }
 }

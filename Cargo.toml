@@ -11,3 +11,4 @@ repository = "https://github.com/j-cousino/gafw"
 documentation = "https://docs.rs/gafw"
 
 [dependencies]
+git-version = "0.3.9"
