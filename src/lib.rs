@@ -3,8 +3,8 @@
 //!
 use git_version::git_version;
 
-const GIT_VERSION: &str = git_version!();
 
+const GIT_VERSION: &str = git_version!();
 /// Returns the gafw crate version
 /// 
 /// # Examples
